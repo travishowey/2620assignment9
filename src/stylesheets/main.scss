@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+// Set your brand colors
+$purple: lightgray;
+$pink: blue;
+$brown: black;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$is-info: blue;
+$green: lightgray;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$message-header: black;
+
+.card {
+    &.is-horizontal {
+    display: flex;
+    .card-image {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card-stacked {
+        flex-direction: column;
+        flex: 1 1 auto;
+        display: flex;
+        position: relative;
+        
+        .card-content {
+        flex-grow: 1;
+        }
+        }
+    }
+}
+
+
+
+@import "~bulma/bulma";
+// Your styles go here
